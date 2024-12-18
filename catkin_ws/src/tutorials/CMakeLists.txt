@@ -107,6 +107,9 @@ catkin_package(
 #  CATKIN_DEPENDS rospy std_msgs
 #  DEPENDS system_lib
 )
+catkin_install_python(PROGRAMS scripts/publisher_node.py 
+DESTINATION ${CATKIIN_PACKAGE_BIN_DESTINATION}
+)
 
 ###########
 ## Build ##
